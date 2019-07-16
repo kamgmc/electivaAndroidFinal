@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">Doit</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">To Do</string>
+
+    <string name="date_picker">datePicker</string>
+    <string name="time_picker">timePicker</string>
+    <string name="incompletas">Por completar</string>
+    <string name="finalizadas">Finalizadas</string>
+    <string name="new_titulo">Titulo:</string>
+    <string name="new_fecha">Fecha :</string>
+    <string name="new_hora">Hora:</string>
+    <string name="new_descripcion">Descripción:</string>
+    <string name="new_completado">Completado</string>
+    <string name="btn_guardar">Guardar</string>
+
 </resources>
