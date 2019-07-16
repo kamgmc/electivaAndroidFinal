@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewTaskActivity">
+
+        <TextView
+            android:id="@+id/tituloNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/new_titulo"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/inputTituloNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tituloNew"
+            android:layout_toEndOf="@+id/tituloNew"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/fechaNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/tituloNew"
+            android:text="@string/new_fecha" />
+
+        <EditText
+            android:id="@+id/inputFechaNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fechaNew"
+            android:layout_toEndOf="@+id/fechaNew"
+            android:layout_below="@+id/tituloNew"
+            android:padding="8dp"
+            android:ems="5"
+            android:inputType="date"
+            android:clickable="true"
+            android:focusable="false"
+            android:onClick="showDatePickerDialog"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/horaNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/tituloNew"
+            android:layout_toRightOf="@+id/inputFechaNew"
+            android:layout_toEndOf="@+id/inputFechaNew"
+            android:text="@string/new_hora" />
+
+        <EditText
+            android:id="@+id/inputHoraNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/horaNew"
+            android:layout_toEndOf="@+id/horaNew"
+            android:layout_below="@+id/tituloNew"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="5"
+            android:inputType="time"
+            android:clickable="true"
+            android:focusable="false"
+            android:onClick="showTimePickerDialog" />
+
+        <TextView
+            android:id="@+id/detalleNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/fechaNew"
+            android:text="@string/new_descripcion" />
+
+        <EditText
+            android:id="@+id/inputDetailNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@+id/detalleNew"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:inputType="textMultiLine" />
+
+        <CheckBox
+            android:id="@+id/completadoNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_completado"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/inputDetailNew"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/completadoNew"
+            android:layout_centerHorizontal="true"
+            android:onClick="saveDataTask"
+            android:padding="8dp"
+            android:text="@string/btn_guardar" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
